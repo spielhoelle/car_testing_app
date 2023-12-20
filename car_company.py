@@ -23,15 +23,13 @@ class Inventory:
         car = self.find_car(make, model)
         if car:
             car.price = price
-def list_cars(self):
-        return self.cars
-
-def remove_car(self, model):
-        car = self.remove_car_car(model)
-        if car:
-            car.model < 1995
-def list_cars(self):
-        return self.cars
+            
+    def remove_car(self, model):
+            car = self.remove_car_car(model)
+            if car:
+                car.model < 1995
+    def list_cars(self):
+            return self.cars
 
             
 
