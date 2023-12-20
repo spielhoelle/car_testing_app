@@ -23,10 +23,15 @@ class Inventory:
         car = self.find_car(make, model)
         if car:
             car.price = price
-
+            
+    def remove_car(self, model):
+            car = self.remove_car_car(model)
+            if car:
+                car.model < 1995
     def list_cars(self):
-        return self.cars
+            return self.cars
 
+            
 
 # Manual testing
 mycar = Car("Toyota", "Corolla", 2020, 20000)
@@ -43,6 +48,7 @@ inv.add_car(mycar)
 inv.add_car(mycar2)
 
 inv.update_car("Honda", "Civic", 19000)
+inv.remove_car(1990)
 inventoryWithCars = inv.list_cars()
 
 for car in inventoryWithCars:
